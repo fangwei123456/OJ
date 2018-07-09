@@ -1,15 +1,14 @@
 //http://poj.org/problem?id=2255
-//POJ2255£¬¶ş²æÊ÷ÖØ¹¹£¬ÍøÉÏ´úÂëÌ«Âé·³£¬±¾´úÂëtoo simple
+//POJ2255ï¼ŒäºŒå‰æ ‘é‡æ„ï¼Œç½‘ä¸Šä»£ç å¤ªéº»çƒ¦ï¼Œæœ¬ä»£ç too simple
 #include <iostream>
 #include <queue>
-#include <stdlib.h>
 
 using namespace std;
 char s1[40],s2[40];
 int finder, n1, n2;
 pair<int,int> node[40];
 
-void restruct(int left, int right, int parent, bool isLeft)//¾ùÎªs2ÖĞµÄÏÂ±ê
+void restruct(int left, int right, int parent, bool isLeft)//å‡ä¸ºs2ä¸­çš„ä¸‹æ ‡
 {
 	for(int i=left; i<=right; i++)
 	{
@@ -31,7 +30,7 @@ void restruct(int left, int right, int parent, bool isLeft)//¾ùÎªs2ÖĞµÄÏÂ±ê
 	}
 }
 
-void printfNode(int cur)//ºóĞò±éÀú
+void printfNode(int cur)//ååºéå†
 {
 	
 	if(cur<0 || cur>=n2)
@@ -49,7 +48,7 @@ int main() {
 		n1 = strlen(s1);
 		n2 = strlen(s2);
 		finder = 0;
-		//node³õÊ¼»¯
+		//nodeåˆå§‹åŒ–
 		for(int i=0; i<n2; i++)
 		{
 			node[i].first = -1;
