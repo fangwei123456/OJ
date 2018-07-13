@@ -1,5 +1,5 @@
 //http://poj.org/problem?id=1200
-//比较有意思的哈希应用
+//姣旇緝鏈夋剰鎬濈殑鍝堝笇
 #include <iostream>
 #include <map>
 using namespace std;
